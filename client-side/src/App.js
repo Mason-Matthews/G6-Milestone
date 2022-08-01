@@ -1,9 +1,17 @@
 import './App.css';
+import Graph from './components/Graph';
 
-export default function App() {
+function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello working tracker!
-    </h1>
-  )
+  <div className="App">
+    <div className="container mx-auto max-w-6xl text-center drop-shadow-lg text-gray-800">
+      <h1 className="header">Expense Tracker</h1>
+      <div className="grid md:grid-cols-2 gap-4">
+          <Graph>Graph</Graph>
+      </div>
+    </div>
+  </div>
+  );
 }
+
+export default App;
