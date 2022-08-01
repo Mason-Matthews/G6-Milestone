@@ -1,5 +1,6 @@
 import './App.css';
 import Graph from './components/Graph';
+import Form from './components/Form';
 
 function App() {
   return (
@@ -7,7 +8,10 @@ function App() {
     <div className="container mx-auto max-w-6xl text-center drop-shadow-lg text-gray-800">
       <h1 className="header">Expense Tracker</h1>
       <div className="grid md:grid-cols-2 gap-4">
-          <Graph>Graph</Graph>
+        {}
+          <Graph></Graph>
+        {}
+          <Form></Form>
       </div>
     </div>
   </div>
