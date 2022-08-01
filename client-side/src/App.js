@@ -1,11 +1,9 @@
 import './App.css';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <h1>expense tracker</h1>
-    </div>
-  );
+    <h1 className="text-3xl font-bold underline">
+      Hello working tracker!
+    </h1>
+  )
 }
-
-export default App;
