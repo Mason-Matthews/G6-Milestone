@@ -1,27 +1,37 @@
 import React from 'react'
+import { useForm } from 'react-hook-form'
+import List from './List';
+import '../App.css'
 
 export default function Form() {
+
+    const { handleSubmit, register} = useForm ();
+    const onSubmit = (data) => {
+        console.log(data)
+    }
+
   return (
-    <div className='form max-w-sm mx-auto w-96'>
-        <h1 className='font-bold pb-4 text-xl'>Transaction</h1>
-        <form id='form'>
-            <div className="grid gap-4">
+    <div>
+        <h1>Transaction</h1>
+        <form id='form' onSubmit={handleSubmit(onSubmit)}>
+            <div>
                 <div className="input-group">
-                    <input required type="text" placeholder='type of expense' className='form-input' />
+                    <input required type="text" {...register('name')} placeholder='type of expense' className='form-input' />
                 </div>
-                <select className='form-input'>
+                <select className='form-input'{...register('type')}>
                     <option value="Investment" defaultValue>Investment</option>
-                    <option value="Expense">Expense</option>
+                    <option value="Expense">Miscellaneous</option>
                     <option value="Savings">Savings</option>
                 </select>
                 <div className="input-group">
-                    <input required type="text" placeholder='Amount' className='form-input' />
+                    <input required type="text" placeholder='Amount' {...register('amount')} className='form-input' />
                 </div>
                 <div className="submit-btn">
-                    <button className='border py-2 text-white bg-indigo-500 w-full'>submit expense</button>
+                    <button>submit expense</button>
                 </div>
             </div>    
         </form>
+        <List></List>
     </div>
   )
 }

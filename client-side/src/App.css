@@ -36,3 +36,24 @@
   padding-left: auto;
   text-align: center;
 }
+
+.submit-btn {
+  background-color: red;
+  width:50%;
+  padding-left: auto;
+  text-align: center;
+}
+
+.delete-item {
+  background-color: blue;
+  width: 50%;
+  padding-left: auto;
+  text-align: center;
+}
+
+.history {
+  background-color: green;
+  width:50%;
+  padding-left: auto;
+  text-align: center; 
+}
