@@ -7,7 +7,7 @@ export default function Form() {
         <form id='form'>
             <div className="grid gap-4">
                 <div className="input-group">
-                    <input type="text" placeholder='type of expense' className='form-input' />
+                    <input required type="text" placeholder='type of expense' className='form-input' />
                 </div>
                 <select className='form-input'>
                     <option value="Investment" defaultValue>Investment</option>
@@ -15,7 +15,7 @@ export default function Form() {
                     <option value="Savings">Savings</option>
                 </select>
                 <div className="input-group">
-                    <input type="text" placeholder='Amount' className='form-input' />
+                    <input required type="text" placeholder='Amount' className='form-input' />
                 </div>
                 <div className="submit-btn">
                     <button className='border py-2 text-white bg-indigo-500 w-full'>submit expense</button>
