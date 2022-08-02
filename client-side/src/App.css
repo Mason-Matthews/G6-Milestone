@@ -13,7 +13,7 @@
   background-color: black;
 }
 
-.chart .title {
+.chart.title {
   position: absolute;
   left: 0;
   right: 0;
@@ -22,3 +22,17 @@
   margin-right: auto;
 }
 
+.form-input {
+  @apply
+  mt-1
+  block
+  w-full
+  py-2
+  px-3
+  border border-blue-500
+  bg-white
+  rounded-md
+  focus:outline-none
+  focus:ring-blue-500
+  sm:text-sm
+}

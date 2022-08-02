@@ -1,5 +1,6 @@
-import React from 'react'
-import '../App.css'
+import React from 'react';
+import '../App.css';
+import 'boxicons';
 
 const obj = [
     {
@@ -15,8 +16,8 @@ const obj = [
 
 export default function List() {
   return (
-    <div>
-        <h1 className='history'>History</h1>    
+    <div className='flex flex-col py-6 gap-3'>
+        <h1 className='history py-4 text-xl font-bold'>Past Expenses</h1>    
         {obj.map((value, index) => <Transaction key={index} variable={value}></Transaction>
  )}    
     </div>
@@ -26,8 +27,9 @@ export default function List() {
 function Transaction ({variable}) {
     if(!variable) return null;
     return (
-        <div className='delete-item'>
-            <button>
+        <div className='delete-item flex justify-center bg-gray-50 py-2 rounded-md'style={{borderLeft:`8px solid lightblue`}}>
+            <button className='px-3'>
+            <box-icon name="trash"></box-icon>
             </button>
             <span>{variable.name ?? ''}</span>
         </div>
