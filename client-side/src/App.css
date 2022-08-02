@@ -9,7 +9,7 @@
 .header {
   color: white;
   font-style: oblique;
-  font-size: 20px;
+  font-size: 30px;
   background-color: black;
 }
 
@@ -22,38 +22,3 @@
   margin-right: auto;
 }
 
-.form-input {
-  @apply 
-  border 
-  rounded-md 
-  sm:text-sm;
-  border: 1;
-  border-color: black;
-  background-color: white;
-  focus: outline-none;
-  shape-margin: text-sm;
-  width: 50%;
-  padding-left: auto;
-  text-align: center;
-}
-
-.submit-btn {
-  background-color: red;
-  width:50%;
-  padding-left: auto;
-  text-align: center;
-}
-
-.delete-item {
-  background-color: blue;
-  width: 50%;
-  padding-left: auto;
-  text-align: center;
-}
-
-.history {
-  background-color: green;
-  width:50%;
-  padding-left: auto;
-  text-align: center; 
-}

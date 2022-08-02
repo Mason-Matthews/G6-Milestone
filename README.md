@@ -2,6 +2,7 @@
 
 In this project, we will be creating an expense tracker. 
 We will be utilizing skills learned in HTML, CSS, JavaScript, React, Express and MongoDB.
+    -Boxicon.js is used for the trash logo for the delete history function button.
 
 3rd party applications that will be used are:
 - Tailwind.css (https://tailwindcss.com/docs/guides/create-react-app)

@@ -1,6 +1,5 @@
 import React from 'react'
 import '../App.css'
-import 'boxicons'; 
 
 const obj = [
     {
@@ -29,7 +28,6 @@ function Transaction ({variable}) {
     return (
         <div className='delete-item'>
             <button>
-                <box-icon name="trash" size="25px"></box-icon>
             </button>
             <span>{variable.name ?? ''}</span>
         </div>

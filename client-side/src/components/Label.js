@@ -28,11 +28,12 @@ export default function Label() {
 function LabelCreate({ data }){
     if(!data) return <></>;
     return (
-        <div>
-            <div>
-                <h3>{data.type ?? ''}</h3>
+        <div className='labels flex justify-between'>
+            <div className='flex gap-2'>
+            <div className='w-2 h-2 rounded py-3' style={{background:'green'}}></div>
+                <h3 className='text-md font-bold'>{data.type ?? ''}</h3>
             </div>
-            <h3>{Math.round(data.percent) ?? 0}%</h3>
+            <h3 className='font-bold'>{Math.round(data.percent) ?? 0}%</h3>
         </div>
     )
 }

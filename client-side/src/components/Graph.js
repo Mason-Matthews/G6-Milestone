@@ -10,11 +10,11 @@ const config = {
     datasets: [{
       data: [33, 33, 34],
       backgroundColor: [
-        'rgb(255, 99, 132)',
+        'rgb(255, 100, 132)',
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
       ],
-      hoverOffset: 12,
+      hoverOffset: 100,
       borderRadius: 25,
       spacing: 12,
     }]
@@ -26,19 +26,19 @@ const config = {
 
 export default function Graph() {
   return (
-    <div className='flex -justify-content max-w-xs mx-auto'>
-      <div className='item'>
-        <div className='chart'>
+    <div className="flex justify-content max-w-xs mx-auto">
+        <div className="item">
+            <div className="chart ">
             <Doughnut {...config}></Doughnut>
-            <h2 className='mb-4 font-bold title'>Total <br></br>
-              <span className='block text-4xl'>${0}</span>
+            <h2 className='block text-3xl text-red-500'>Total <br></br>
+              <span className='block text-3xl text-blue-400'>${0}</span>
             </h2>
         </div>
 
-        <div className='flex flex-col py-10 gap-4'>
-            <Label></Label>
+        <div className="flex flex-col py-10 gap-4">
+                <Label></Label>
+            </div> 
         </div>
-      </div>
     </div>
   )
 };
