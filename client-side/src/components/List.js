@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
-import 'boxicons'
+import 'boxicons';
+
 const obj = [
     {
         name: "Savings",

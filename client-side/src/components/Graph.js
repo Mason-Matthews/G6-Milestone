@@ -1,14 +1,14 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js';
-import Label from './Label.js'
+import Label from './Label.js';
 
 Chart.register(ArcElement)
 
 const config = {
   data: {
     datasets: [{
-      data: [33, 33, 34],
+      data: [33, 33, 33],
       backgroundColor: [
         'rgb(146, 146, 146)'],
         hoverBackgroundColor: [
