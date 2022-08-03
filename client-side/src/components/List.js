@@ -27,9 +27,10 @@ export default function List() {
 function Transaction ({variable}) {
     if(!variable) return null;
     return (
-        <div className='delete-item flex justify-center bg-blue py-2 rounded-md'style={{borderLeft:`8px solid lightblue`}}>
-            <button className='px-3'>
-            <box-icon type='solid' name='trash'></box-icon>            </button>
+        <div className='delete-item flex justify-center bg-blue py-2 rounded-md'>
+            <button className='delete'>
+            <box-icon type='solid' name='trash' color='black'></box-icon>
+            </button>
             <span>{variable.name ?? ''}</span>
         </div>
     )

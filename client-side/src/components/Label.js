@@ -30,7 +30,7 @@ function LabelCreate({ data }){
     return (
         <div className='labels flex justify-between'>
             <div className='flex gap-2'>
-            <div className='w-2 h-2 rounded py-3' style={{background:'lightblue'}}></div>
+            <div className='w-2 h-2 rounded py-3'></div>
                 <h3 className='text-md font-bold'>{data.type ?? ''}</h3>
             </div>
             <h3 className='font-bold'>{Math.round(data.percent) ?? 0}%</h3>

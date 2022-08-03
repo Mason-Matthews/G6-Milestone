@@ -10,12 +10,15 @@ const config = {
     datasets: [{
       data: [33, 33, 33],
       backgroundColor: [
-        'rgb(146, 146, 146)'],
+        '#e5e5e5'],
+
+
         hoverBackgroundColor: [
-        'rgb(255, 100, 132)',
-        'rgb(54, 162, 235)',
-        'rgb(255, 205, 86)'
+        'rgb(37, 105, 252)',
+        'rgb(163, 2, 212)',
+        'rgb(252, 134, 134)'
       ],
+
       hoverOffset: 10,
       borderRadius: 25,
       spacing: 5,
@@ -32,8 +35,8 @@ export default function Graph() {
         <div className="item">
             <div className="chart">
             <Doughnut {...config}></Doughnut>
-            <h2 className='block text-3xl text-red-500'>Total <br></br>
-              <span className='block text-3xl text-blue-400'>${0}</span>
+            <h2 className='block text-3xl'>Total <br></br>
+              <span className='block text-3xl'>${0}</span>
             </h2>
         </div>
 

@@ -2,24 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  background: rgb(175, 175, 175);
+}
+
 .App {
   text-align: center;
+  background-color: rgb(175, 175, 175);
 }
 
 .header {
-  color: white;
+  color: rgb(37, 105, 252);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-style: oblique;
   font-size: 30px;
-  background-color: black;
+  background-color: rgb(175, 175, 175);
 }
 
 .chart {
-  opacity: 0.8;
+  opacity: 0.6;
 }
 
-.chart:hover {
-  color: red;
-}
 
 .chart.title {
   position: absolute;
@@ -44,16 +47,29 @@
   sm:text-sm
 }
 
+.form-input {
+  color: rgb(175, 175, 175);
+}
+
 .dateof {
   font-style: italic;
+  background-color: rgb(175, 175, 175);
   font-weight: bold;
+  color: black;
+
 }
 
 .input-group {
-  box-shadow: 5px 5px 5px rgb(146, 146, 146);
+  /* box-shadow: 5px 6px 8px hwb(0 84% 15%); */
+  box-shadow: 5px 6px 8px #2569fc;
+
 }
 
 .submit-btn {
-  box-shadow: 5px 5px 5px rgb(146, 146, 146);
+  /* box-shadow: 4px 6px 8px hwb(0 84% 15%); */
+  box-shadow: 4px 6px 8px #2569fc;
+}
 
+.submit-btn:hover {
+  background-color: white;
 }

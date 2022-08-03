@@ -18,7 +18,7 @@ export default function Form() {
                 <div className='date'>
                 <label className='dateof'>Date of Transaction<br></br>
                     <input required type="date"></input>
-                    </label>
+                </label>
                 </div>
                 <div className="input-group">
                     <input required type="text" {...register('name')} placeholder='Name of Expense (ex: Costco, Chevron, Target, etc.,)' className='form-input' />
@@ -32,7 +32,7 @@ export default function Form() {
                     <input required type="text" pattern="([0-9]+.{0,1}[0-9]*,{0,1})*[0-9]" placeholder='$ Amount $' {...register('amount')} className='form-input' />
                 </div>
                 <div className="submit-btn">
-                    <button className='border py-2 w-full hover:bg-blue-200'>SUBMIT EXPENSE</button>
+                    <button className='border py-2 w-full '>SUBMIT EXPENSE</button>
                 </div>
             </div>    
         </form>
