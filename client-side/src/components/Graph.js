@@ -10,13 +10,15 @@ const config = {
     datasets: [{
       data: [33, 33, 34],
       backgroundColor: [
+        'rgb(146, 146, 146)'],
+        hoverBackgroundColor: [
         'rgb(255, 100, 132)',
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
       ],
-      hoverOffset: 100,
+      hoverOffset: 10,
       borderRadius: 25,
-      spacing: 10,
+      spacing: 5,
     }]
   },
   options: {

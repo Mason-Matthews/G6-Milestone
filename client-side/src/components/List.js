@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
-import 'boxicons';
-
+import 'boxicons'
 const obj = [
     {
         name: "Savings",
@@ -27,10 +26,9 @@ export default function List() {
 function Transaction ({variable}) {
     if(!variable) return null;
     return (
-        <div className='delete-item flex justify-center bg-gray-50 py-2 rounded-md'style={{borderLeft:`8px solid lightblue`}}>
+        <div className='delete-item flex justify-center bg-blue py-2 rounded-md'style={{borderLeft:`8px solid lightblue`}}>
             <button className='px-3'>
-            <box-icon name="trash"></box-icon>
-            </button>
+            <box-icon type='solid' name='trash'></box-icon>            </button>
             <span>{variable.name ?? ''}</span>
         </div>
     )
