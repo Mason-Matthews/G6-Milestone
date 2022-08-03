@@ -10,7 +10,7 @@
     - Code was used from Tailwind.css and utilized as templates for some of the CSS design for the project.
 - Chart.js (*https://www.chartjs.org/docs/latest/charts/doughnut.html#doughnut*)
     - This site was used to have a template of the chart that we are using as the main chart for the project.
- -Boxicon.js (*boxicons.com*)
+ - Boxicon.js (*boxicons.com*)
     - Boxicon is used for the trash logo for the delete history function button.
 
 Additional insight was taken from forums and websites such as *stackoverflow.com* and *w3schools.com*.
