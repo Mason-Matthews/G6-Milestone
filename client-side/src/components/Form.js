@@ -2,6 +2,7 @@ import React from 'react'
 import { useForm } from 'react-hook-form'
 import List from './List';
 import '../App.css'
+import axios from 'axios';
 
 
 export default function Form() {
@@ -10,17 +11,10 @@ export default function Form() {
     const onSubmit = (data) => {
         console.log(data)
 
-        fetch('http://localhost:3001/', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/x-www-form-urlencoded',
-            },
-            body: JSON.stringify(data),
-          })
-      
-        .then((res) => res.json())
-        .then((data) => console.log(data));
-    }
+        axios.post('http://localhost:3001/', data)
+
+       .then((response) => console.log(response.data));
+     }
 
   return (
     <div className='form max-w-sm mx-auto w-96'>

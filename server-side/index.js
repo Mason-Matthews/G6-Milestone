@@ -20,6 +20,8 @@ mongoose.connect(
 );
 
 //Middle
+app.use(express.json());
+
 app.use(express.urlencoded({ extended: true }));
 
 //schema
