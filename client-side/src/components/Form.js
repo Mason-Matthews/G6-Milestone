@@ -11,11 +11,13 @@ export default function Form() {
         console.log(data)
 
         fetch('http://localhost:3001/', {
-             method: 'POST', 
-             headers: {"Content-Type": "application/json"},
-             body: JSON.stringify(data)
-            
-            })
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: JSON.stringify(data),
+          })
+      
         .then((res) => res.json())
         .then((data) => console.log(data));
     }
