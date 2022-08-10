@@ -23,7 +23,8 @@ export default function Form() {
                 <div className="input-group">
                     <input required type="text" {...register('name')} placeholder='Name of Expense (ex: Costco, Chevron, Target, etc.,)' className='form-input' />
                 </div>
-                <select className='form-input'{...register('type')}>
+                <select className='form-input' required {...register('type')}>
+                <option disabled>Type of Expense</option>
                     <option value="Investment" defaultValue>Bills</option>
                     <option value="Expense">Miscellaneous</option>
                     <option value="Savings">Savings</option>
