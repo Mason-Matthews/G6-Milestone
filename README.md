@@ -13,4 +13,6 @@
  - Boxicon.js (*https://boxicons.com*)
     - Boxicon is used for the trash logo for the delete history function button.
 
+Troubleshooting bugs and problem resolution solutions came from various forums and DIY/instructional YouTube videos.
+
 Additional insight was taken from forums and websites such as *stackoverflow.com* and *w3schools.com*.
