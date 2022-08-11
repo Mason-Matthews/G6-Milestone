@@ -25,8 +25,8 @@ export default function Form() {
                 </div>
                 <select className='form-input' required {...register('type')}>
                 <option disabled>Type of Expense</option>
-                    <option value="Investment" defaultValue>Bills</option>
-                    <option value="Expense">Miscellaneous</option>
+                    <option value="Bills" defaultValue>Bills</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
                     <option value="Savings">Savings</option>
                 </select>
                 <div className="input-group">
