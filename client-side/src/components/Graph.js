@@ -3,12 +3,20 @@ import { Doughnut } from 'react-chartjs-2';
 import { Chart, ArcElement } from 'chart.js';
 import Label from './Label.js';
 
+
+
 Chart.register(ArcElement)
+let savings = 1;
+let bills = 1;
+let misc = 1;
+let total = savings + bills + misc;
+
 
 const config = {
+  
   data: {
     datasets: [{
-      data: [33, 33, 33],
+      data: [(savings / total - savings), (bills / total - bills), (misc / total - misc)],
       backgroundColor: [
         '#e5e5e5'],
 
@@ -36,7 +44,7 @@ export default function Graph() {
             <div className="chart">
             <Doughnut {...config}></Doughnut>
             <h2 className='block text-3xl'>Total <br></br>
-              <span className='block text-3xl'>${0}</span>
+              <span className='block text-3xl'>${total}</span>
             </h2>
         </div>
 

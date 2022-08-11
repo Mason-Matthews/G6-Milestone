@@ -4,17 +4,17 @@ const obj = [
     {
         color : 'rgb(255, 99, 132)',
         type: "Savings",
-        percent: 'percent of total'
+        percent: 33
     },
     {
         color : 'rgb(54, 162, 235)',
         type: "Bills",
-        percent: 'percent of total'
+        percent: 33
     },
     {
         color : 'rgb(255, 205, 86)',
         type: "Miscellaneous",
-        percent: 'percent of total'
+        percent: 32
     },
 ]
 export default function Label() {

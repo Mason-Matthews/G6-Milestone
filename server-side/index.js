@@ -32,6 +32,7 @@ const expenseSchema ={
     amount: {type: Number},
     date: {type: Date},
 
+
 }
 
 const expense = mongoose.model("expense", expenseSchema);
@@ -61,41 +62,3 @@ app.get("/api", (req, res) => {
 // LISTEN
 app.listen(3001, () => {
   console.log("Hello Greetings! Server listening From port: ", 3001);
-});
-
-
-// mongoose.connect(process.env.MONGO_URI,{
-//     useNewUrlParser: true,
-//     UseUnifiedTopology: true,
-// },
-// () => {
-//     console.log(`connected to mongo: ${process.env.MONGO_URI}`);
-// });
-
-// const expenseSchema = new Schema({
-//     amount: {type: Number},
-//     name: {type: String},
-//     type: {type: String},
-//     date: {type: Date},
-// })
-
-// const expense1 = mongoose.model("expense1", expenseSchema);
-
-// app.get("/",(req, res) =>{
-   
-    
-//     console.log(expense1)
-    
-//     expense1.find().then((foundExpense) => {
-//         console.log(foundExpense);
-//     })
-// });
-
-// app.get('/api', (req, res) => {
-//     res.json({ message: 'Hello from server!' });
-// });
-// //app.use(express.static(path.resolve(__dirname, "../client-side/src/App.js" )));
-
-// app.listen(PORT, () => {
-//     console.log(`Server listening on ${PORT}`);
-//   });
