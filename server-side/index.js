@@ -34,11 +34,13 @@ const expenseSchema ={
 }
 
 const expense = mongoose.model("expense", expenseSchema);
+module.exports = expense;
 
 // ROUTES
-// app.get("/", (req, res) => {
+app.get("/", (req, res) => {
+  console.log(req.body)
   
-// });
+});
 
 app.post("/", async (req,res) =>{
     console.log(req.body)
